@@ -1,0 +1,15 @@
+<h2><%= @task.title.capitalize %></h2>
+<p><%= @task.details.capitalize %></p>
+<input type="checkbox" value=<%= "@tasks.completed" %>>
+
+
+<p><%= link_to "Delete", destroy_path(@task),
+      method: :delete %></p>
+
+<p><%= link_to "Create a new task", new_path %></p>
+<p><%= link_to "Back to list", root_path %></p>
+
+<button><%= link_to "edit this task", edit_path %></button>
+
+
+
